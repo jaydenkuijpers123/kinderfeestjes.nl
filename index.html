@@ -1,1 +1,60 @@
 
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ontdek video's op een modern videoplatform.">
+  <title>VideoHub — Ontdek video's</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="#">Video<span>Hub</span></a>
+
+    <form id="searchForm" class="search">
+      <input id="searchInput" type="search"
+        placeholder="Video's zoeken..." aria-label="Zoeken">
+      <button type="submit">Zoeken</button>
+    </form>
+
+    <button id="menuToggle" class="menu-toggle">☰</button>
+  </header>
+
+  <nav id="navigation" class="navigation">
+    <a href="#" data-category="Alles">Home</a>
+    <a href="#" data-category="Entertainment">Entertainment</a>
+    <a href="#" data-category="Muziek">Muziek</a>
+    <a href="#" data-category="Sport">Sport</a>
+    <a href="#" data-category="Gaming">Gaming</a>
+  </nav>
+
+  <main>
+    <section class="welcome">
+      <p class="eyebrow">ONTDEK IETS NIEUWS</p>
+      <h1>Video's voor iedereen.</h1>
+      <p>Ontdek populaire video's en vind iets dat bij je past.</p>
+    </section>
+
+    <section class="content">
+      <div class="section-heading">
+        <h2 id="sectionTitle">Populaire video's</h2>
+        <select id="sortSelect" aria-label="Video's sorteren">
+          <option value="popular">Populair</option>
+          <option value="newest">Nieuwste</option>
+        </select>
+      </div>
+
+      <div id="videoGrid" class="video-grid"></div>
+      <p id="emptyMessage" hidden>Geen video's gevonden.</p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#">Video<span>Hub</span></a>
+    <p>Een demo-videoplatform voor algemene video-inhoud.</p>
+    <p>© 2026 VideoHub</p>
+  </footer>
+</body>
+</html>
